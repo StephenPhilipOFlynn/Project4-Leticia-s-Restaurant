@@ -64,6 +64,20 @@
                 float: left;
             }
 
+            .sidebar {
+                position: fixed;
+                top: 0;
+                right: 0;
+                height: 100vh;
+                width: 250px;
+                z-index: 999;
+                background-color: #296D23;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+
             
 
             /* Image Carousel */
@@ -148,6 +162,13 @@
     <body>
         <nav>
             <img src="assets/images/restaurant_logo.jpeg" alt="Restaurant Logo" id="logo">
+            <ul class="sidebar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#our-story">Our Story</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#our-story">Our Story</a></li>
