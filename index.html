@@ -7,8 +7,9 @@
         <meta name="author" content>
         <!-- correct this-->
         <title>Leticia's | A Restaurant in Dublin</title>
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <!--Google fonts-->
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Owl Carousel-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!--Favicon-->
@@ -78,7 +79,7 @@
                 width: 250px;
                 z-index: 999;
                 background-color: #296D23;
-                display: flex;
+                display: none;
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: flex-start;
@@ -90,9 +91,7 @@
 
             .sidebar a {
                 width: 100%;
-            }
-
-            
+            }         
 
             /* Image Carousel */
 
@@ -185,7 +184,7 @@
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#reservation">Reservation</a></li>
                 <li><a href="#contact-us">Contact Us</a></li>
-                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
         <section>
@@ -360,20 +359,8 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
-
                 </div>
             </div>
-
-
-
-
-
 
         </section>
         <section class="section" id="reservation"></section>
@@ -426,6 +413,11 @@
             }
             }
             })
+
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
         </script>    
     </body>
 </html>
