@@ -172,6 +172,7 @@
         <nav>
             <img src="assets/images/restaurant_logo.jpeg" alt="Restaurant Logo" id="logo">
             <ul class="sidebar">
+                <li onclick=removeSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#our-story">Our Story</a></li>
                 <li><a href="#menu">Menu</a></li>
@@ -417,6 +418,10 @@
             function showSidebar() {
                 const sidebar = document.querySelector('.sidebar')
                 sidebar.style.display = 'flex'
+            }
+            function removeSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
             }
         </script>    
     </body>
