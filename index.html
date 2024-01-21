@@ -166,6 +166,18 @@
                 color: #EE4E34;
             }
 
+            @media(max-width: 800px) {
+                .hideNavbarOnMobile {
+                    display: none;
+                }
+            }
+
+            @media(max-width: 400px) {
+                .sidebar {
+                    width: 100%;
+                }
+            }
+
         </style>
     </head>
     <body>
@@ -180,11 +192,11 @@
                 <li><a href="#contact-us">Contact Us</a></li>
             </ul>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#our-story">Our Story</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#reservation">Reservation</a></li>
-                <li><a href="#contact-us">Contact Us</a></li>
+                <li class="hideNavbarOnMobile"><a href="#home">Home</a></li>
+                <li class="hideNavbarOnMobile"><a href="#our-story">Our Story</a></li>
+                <li class="hideNavbarOnMobile"><a href="#menu">Menu</a></li>
+                <li class="hideNavbarOnMobile"><a href="#reservation">Reservation</a></li>
+                <li class="hideNavbarOnMobile"><a href="#contact-us">Contact Us</a></li>
                 <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
@@ -361,6 +373,80 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="menu-column">
+                    <h4>Desserts</h4>
+                    <div class="single-menu">
+                        <img src="assets/images/AdobeStock_210067578_Brigadeiro.jpeg" alt="">
+                        <div class="menu-content">
+                            <h5>Brigadeiro<span> </span></h5>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="" alt="">
+                        <div class="menu-content">
+                            <h5><span> </span></h5>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="" alt="">
+                        <div class="menu-content">
+                            <h5><span> </span></h5>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-column">
+                    <h4>Desserts</h4>
+                    <div class="single-menu">
+                        <img src="" alt="">
+                        <div class="menu-content">
+                            <h5><span> </span></h5>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="" alt="">
+                        <div class="menu-content">
+                            <h5><span> </span></h5>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="" alt="">
+                        <div class="menu-content">
+                            <h5><span> </span></h5>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-column">
+                    <h4>Desserts</h4>
+                    <div class="single-menu">
+                        <img src="" alt="">
+                        <div class="menu-content">
+                            <h5><span> </span></h5>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="" alt="">
+                        <div class="menu-content">
+                            <h5><span> </span></h5>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="" alt="">
+                        <div class="menu-content">
+                            <h5><span> </span></h5>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </section>
