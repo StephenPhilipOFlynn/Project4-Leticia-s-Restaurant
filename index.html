@@ -91,7 +91,11 @@
 
             .sidebar a {
                 width: 100%;
-            }         
+            }
+            
+            .menu-button {
+                display: none;
+            }
 
             /* Image Carousel */
 
@@ -117,6 +121,7 @@
             /* Menu Section */
 
             .menu-section {
+                text-align: center;
                 width: 1170px;
                 margin: 100px auto;
             }
@@ -170,6 +175,10 @@
                 .hideNavbarOnMobile {
                     display: none;
                 }
+
+                .menu-button {
+                    display: block;
+                }
             }
 
             @media(max-width: 400px) {
@@ -197,7 +206,7 @@
                 <li class="hideNavbarOnMobile"><a href="#menu">Menu</a></li>
                 <li class="hideNavbarOnMobile"><a href="#reservation">Reservation</a></li>
                 <li class="hideNavbarOnMobile"><a href="#contact-us">Contact Us</a></li>
-                <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
         <section>
@@ -408,9 +417,9 @@
                         </div>
                     </div>
                     <div class="single-menu">
-                        <img src="" alt="">
+                        <img src="assets/images/AdobeStock_550315009_docedeleite.jpeg" alt="">
                         <div class="menu-content">
-                            <h5><span> </span></h5>
+                            <h5>Doce de Leite<span> </span></h5>
                             <p></p>
                         </div>
                     </div>
