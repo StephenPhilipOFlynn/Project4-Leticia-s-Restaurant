@@ -48,6 +48,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                flex: 1;
             }
 
             nav li {
@@ -66,10 +67,18 @@
                 background-color: #EE4E34;
             }
 
+            .logo-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex: 1;
+            }
+
             #logo {
                 height: 150px;
                 margin-left: auto;
                 margin-right: auto;
+                padding-top: 10px;
             }
 
             .sidebar {
@@ -193,7 +202,9 @@
     </head>
     <body>
         <nav>
+            <div class="logo-container">
             <img src="assets/images/restaurant_logo.jpeg" alt="Restaurant Logo" id="logo">
+            </div>
             <ul class="sidebar">
                 <li onclick=removeSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="#home">Home</a></li>
