@@ -178,6 +178,8 @@
                 transform: scale(1.2);
             }
 
+            /* Responsive design for menu on tablet and mobile phone devices */
+
             @media only screen and (min-width: 992px) and (max-width: 1200px) {
                 .menu-section {
                 width: 970px;
@@ -192,10 +194,21 @@
                 .single-menu {
                     flex-direction: column;
                 }
-
-
             }
 
+            @media only screen and (min-width: 767px) {
+                .menu-section {
+                    width: 320px;
+                }
+
+                .menu-column {
+                    width: 100%;
+                }
+
+                .single-menu {
+                    flex-direction: column;
+                }
+            }
 
             /* Contact Us Section */
 
