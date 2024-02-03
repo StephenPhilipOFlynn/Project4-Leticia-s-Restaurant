@@ -108,6 +108,24 @@
                 display: none;
             }
 
+            /* Nav bar elements for responsive Design on mobile */
+
+            @media(max-width: 800px) {
+                .hideNavbarOnMobile {
+                    display: none;
+                }
+
+                .menu-button {
+                    display: block;
+                }
+            }
+
+            @media(max-width: 400px) {
+                .sidebar {
+                    width: 40%;
+                }
+            }
+
             /* Image Carousel */
 
             .owl-carousel .item {
@@ -180,13 +198,13 @@
 
             /* Responsive design for menu on tablet and mobile phone devices */
 
-            @media only screen and (min-width: 992px) and (max-width: 1200px) {
+            @media(max-width: 1200px) {
                 .menu-section {
                 width: 970px;
                 }
             }
 
-            @media only screen and (min-width: 768px) and (max-width: 991px) {
+            @media(max-width: 991px) {
                 .menu-section {
                 width: 750px;
                 }
@@ -194,9 +212,13 @@
                 .single-menu {
                     flex-direction: column;
                 }
+
+                .single-menu img {
+                max-width: 100px;
+                }
             }
 
-            @media only screen and (min-width: 767px) {
+            @media(max-width: 767px) {
                 .menu-section {
                     width: 320px;
                 }
@@ -207,6 +229,10 @@
 
                 .single-menu {
                     flex-direction: column;
+                }
+
+                .single-menu img {
+                max-width: 150px;
                 }
             }
 
@@ -231,22 +257,6 @@
                 margin: 1%;
                 padding: 5%;
                 color: #EE4E34;
-            }
-
-            @media(max-width: 800px) {
-                .hideNavbarOnMobile {
-                    display: none;
-                }
-
-                .menu-button {
-                    display: block;
-                }
-            }
-
-            @media(max-width: 400px) {
-                .sidebar {
-                    width: 100%;
-                }
             }
 
         </style>
