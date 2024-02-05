@@ -109,7 +109,14 @@
                 display: none;
             }
 
-            /* Nav bar elements for responsive Design on mobile */
+            /* Nav bar elements for responsive Design on smaller devices and mobile */
+
+            @media(max-width: 900px)  {
+                nav a {
+                    padding: 2px 5px;
+                }
+            }
+
 
             @media(max-width: 800px) {
                 .hideNavbarOnMobile {
