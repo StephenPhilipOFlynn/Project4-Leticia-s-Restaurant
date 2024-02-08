@@ -24,9 +24,6 @@
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
-            }
-
-            html {
                 scroll-behavior: smooth;
             }
 
@@ -251,6 +248,25 @@
 
             #contact-us {
                 text-align: center;
+            }
+
+            /* Return to Top Button */
+
+            .scrollUp {
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                padding: 5px 5px;
+                background-color: #000;
+                color: #fff;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all 0.5s ease 0s;
+            }
+
+            .scrollUp:hover {
+                background-color: #f7f7f7;
+                color: #000;
             }
 
             /* Social Media Links */
@@ -554,6 +570,7 @@
                 <p>Email - leticia@restaurant.ie</p>
             </div>
         </section>
+        <div onclick="scrollToTop()" class="scrollUp">Back to Top</div>
         <section>
             <ul class="social-networks">
                 <li>
@@ -601,6 +618,10 @@
             function removeSidebar() {
                 const sidebar = document.querySelector('.sidebar')
                 sidebar.style.display = 'none'
+            }
+
+            function scrollUp() {
+
             }
         </script>    
     </body>
