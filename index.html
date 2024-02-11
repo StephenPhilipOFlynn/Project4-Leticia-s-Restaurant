@@ -254,6 +254,14 @@
                 margin: auto;
             }
 
+            #booking input {
+                margin-top: 20px;
+                background-color: white;
+                color: black;
+                cursor: pointer;
+                padding: 10px;
+            }
+
             @media(max-width: 767px) {
                 #reservation{
                     width: 300px;
@@ -586,7 +594,22 @@
         <section class="section" id="reservation">
             <div>
 
-                <h2>Reserve a Table</h2>
+                <h2>Table Reservation</h2>
+                <div>
+                    <form id="booking" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                    <label for="guests">Number of Guests</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>                        
+                </form>
+                
+                </div>
 
             </div>
 
