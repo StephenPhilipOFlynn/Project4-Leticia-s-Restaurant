@@ -348,9 +348,20 @@
                 color: #EE4E34;
             }
 
+            /* Preloader */
+
+            #preloader {
+                background: #000;
+                height: 100vh;
+                width: 100%;
+                position: fixed;
+                z-index: 100;
+            }
+
         </style>
     </head>
     <body>
+        <div id="preloader"></div>
         <nav>
             <div class="logo-container">
             <img src="assets/images/restaurant_logo.jpeg" alt="Restaurant Logo" id="logo">
@@ -629,11 +640,11 @@
                     <form id="booking" method="post">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
-                        <label for="date">Date</label>
+                        <label for="date">Date:</label>
                         <input type="date" id="date" name="date" required>
                         <label for="time">Time:</label>
                         <input type="time" id="time" name="time" required>
-                        <label for="guests">Number of Guests</label>
+                        <label for="guests">Number of Guests:</label>
                         <input type="number" id="guests" name="guests" min="1" required>
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>                        
