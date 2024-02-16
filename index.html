@@ -351,8 +351,8 @@
             /* Preloader */
 
             #preloader {
-                background: #FEDD00 url(assets/images/loading-yellow.gif) no-repeat center center;
-                background-size: 20%;
+                background: #FCEDDA url(assets/images/loading-yellow.gif) no-repeat center center;
+                background-size: 10%;
                 height: 100vh;
                 width: 100%;
                 position: fixed;
@@ -685,6 +685,15 @@
 
 
         <script>
+            /* Preloader */
+            var loader = document.getElementById("preloader");
+
+            window.addEventListener("load", function() {
+                loader.style.display = "none";
+            })
+
+            /* Picture Carousel */
+
             $('.owl-carousel').owlCarousel({
             loop:true,
             margin:10,
@@ -703,6 +712,8 @@
             }
             }
             })
+
+            /* Navigation bar functions */
 
             function showSidebar() {
                 const sidebar = document.querySelector('.sidebar')
