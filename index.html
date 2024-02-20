@@ -183,6 +183,11 @@
 
             .menu-column {
                 width: 32%;
+                display: none;
+            }
+
+            .menu-column[data-category ="starters"] {
+                display: block;
             }
 
             .single-menu {
@@ -213,6 +218,18 @@
                 transition: 0.8s;
                 transform: scale(1.2);
             }
+
+
+            button #showDesserts {
+                margin: 5px;
+                padding: 5px;
+                background-color: #296D23;
+                color: #f7f7f7;
+                border-radius: 5px;
+
+            }
+
+
 
             /* Responsive design for Menu on tablet and mobile phone devices */
 
@@ -414,7 +431,7 @@
                 <div>
                     <button id="showStarters">Starters</button>
                     <button id="showMains">Main Courses</button>
-                    <button id="showDesserts">Desserts</button>
+                    <button id="showDesserts">Desserts and Drinks</button>
                 </div>
                 <div class="menus">
                     <div class="menu-column" data-category="starters">
@@ -489,7 +506,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="menu-column" data-category="mains">
                         <h4>Main Menu</h4>
                         <div class="single-menu">
@@ -562,7 +578,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="menu-column">
+                    <div class="menu-column" data-category="Desserts">
                     <h4>Desserts and Drinks</h4>
                     <div class="single-menu">
                         <img src="assets/images/AdobeStock_210067578_Brigadeiro.jpeg" alt="Brigadeiro dessert">
@@ -578,7 +594,7 @@
                             <p></p>
                         </div>
                     </div>
-                    <div class="single-menu">
+                    <div class="single-menu" data-category="Desserts">
                         <img src="assets/images/AdobeStock_532452480_pudim.jpeg" alt="Pudding with Condensed Milk">
                         <div class="menu-content">
                             <h5>Pudim de Leite Condensado<span> €8</span></h5>
@@ -610,7 +626,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="menu-column">
+                    <div class="menu-column" data-category="Desserts">
                     <h4>Desserts and Drinks</h4>
                     <div class="single-menu">
                         <img src="assets/images/AdobeStock_578515142_brahma_chopp.jpeg" alt="Brahma drink">
