@@ -219,8 +219,14 @@
                 transform: scale(1.2);
             }
 
+            /* View Menu Buttons */
 
-            button {
+            .select-menu {
+                display: flex;
+                justify-content: center;
+            }
+
+            .select-menu button {
                 margin: 10px;
                 padding: 5px;
                 background-color: #296D23;
@@ -230,10 +236,8 @@
                 text-decoration: none;
                 line-height: 20px;
                 box-shadow: none;
-
+                width: 125px;
             }
-
-
 
             /* Responsive design for Menu on tablet and mobile phone devices */
 
@@ -432,7 +436,7 @@
                     <h2>Our Menu</h2>
                     <p>We know you are hungry, vamos!</p>
                 </div>
-                <div>
+                <div class="select-menu">
                     <button id="showStarters">Starters</button>
                     <button id="showMains">Main Courses</button>
                     <button id="showDesserts">Desserts and Drinks</button>
